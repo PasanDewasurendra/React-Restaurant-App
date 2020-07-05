@@ -1,5 +1,5 @@
 import React from 'react'
-import { CardImg, CardBody, Card, CardTitle, CardText, Breadcrumb, BreadcrumbItem } from 'reactstrap'
+import { CardImg, CardBody, Card, CardTitle, CardText, Breadcrumb, BreadcrumbItem, Button, Modal, ModalHeader, ModalBody } from 'reactstrap'
 import { Link } from 'react-router-dom'
 
 function RenderDish({dish}){
@@ -37,6 +37,16 @@ function RenderComments({comments}){
                     }
                 </ul>
                 
+                <Button color="outline-secondary"><span className="fa fa-pencil"> Submit Comment </span></Button> 
+
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                    <ModalHeader>Submit Comment</ModalHeader>
+                    <ModalBody>
+                        
+
+                    </ModalBody>
+                </Modal>
+
             </div>
         )
     }else{
