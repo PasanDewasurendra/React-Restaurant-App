@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 
 function RenderLeader({leader}){
     return(
-        <Media className="mt-4">
+        <Media className="pt-5">
             <Media className="mr-5" left href="#">
                 <Media object src={leader.image} alt={leader.name} />
             </Media>
             <Media body>
                 <Media heading> {leader.name}</Media>
-                <Media className="mb-3">{leader.designation}</Media>
+                <Media className="pb-2">{leader.designation}</Media>
                 {leader.description}
             </Media>
         </Media>
