@@ -12,8 +12,7 @@ import { Loading } from './LoadingComponent';
                     <CardTitle>{dish.name}</CardTitle>
                 </CardImgOverlay>
                 </Link>
-            </Card>
-            
+            </Card> 
         )
     }
 
